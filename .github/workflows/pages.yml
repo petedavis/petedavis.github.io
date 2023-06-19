@@ -41,14 +41,13 @@ jobs:
     #     commitChange: false
     #     updateFile: true
       
-    - name: Build the site using /devcontainers/jekyll
+    - name: Build and run dev container task
+      uses: devcontainers/ci@v0.3
       env:
         JEKYLL_ENV: production
         NODE_ENV: production
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/workspace -v ${{ github.workspace }}/_site:/workspace/_site \
-        mcr.microsoft.com/devcontainers/jekyll:1-bullseye /bin/bash -c "chmod -R 777 /workspace && cd /workspace && jekyll build --future"
+      with:
+        runCmd: jekyll build --future
         
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
