@@ -4,7 +4,7 @@
   "description": "A Jekyll Tailwind starter blog",
   "author": "rob@zerostatic.io",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
