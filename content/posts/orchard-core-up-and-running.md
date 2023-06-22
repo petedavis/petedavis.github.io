@@ -7,6 +7,8 @@ categories: ["Orchard Core", "Development"]
 # description: "Making sure your website runs fast and loads quickly is a fundamental part of the web design and seo process."
 thumbnail: "https://source.unsplash.com/dCgbRAQmTQA/640x360"
 image: "https://source.unsplash.com/dCgbRAQmTQA/1600x900"
+cascade:
+  featured_image: "https://source.unsplash.com/dCgbRAQmTQA/1600x900"
 ---
 
 The foundations of Orchard Core are pretty amazing, and the [performance without caching rendered HTML output is stunning](https://www.youtube.com/watch?v=lSvtxQkaUq4). However getting up and running to develop your own modules and themes has never been simpler now that the [entire CMS feature set is just a set of Nuget packages](https://www.youtube.com/watch?v=WCmfa1gHsQo&t=374s).
@@ -15,9 +17,9 @@ If you have never built the Orchard Core project from source, [and tried to foll
 
 Here is a quick process to get Orchard Core CMS up and running from the AppVeyour builds.
 
-Step 1: Create an Empty ASP.NET Core Web Application
-First create a new empty ASP.NET Core Web Application.
+## Step 1: Create an Empty ASP.NET Core Web Application
 
+First create a new empty ASP.NET Core Web Application.
 
 ## Step 2: Install Orchard Core Nuget Packages
 
@@ -44,15 +46,17 @@ Now we need to add NuGet.config file next to your solution file that adds all th
   </packageSources>
 </configuration>
 ```
+
 Now add the OrchardCore.Cms package to your project
 
 ```bash
 Install-Package OrchardCore.Cms -Prerelease
 ```
 
-# Step 3: Configure Orchard Core CMS
+## Step 3: Configure Orchard Core CMS
 
 Edit the Startup.cs to add the OrchardCms to the services collection.
+
 ```c#
 public void ConfigureServices(IServiceCollection services)
 {
@@ -77,4 +81,5 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 ```
 
 ## Step 4: Run Orchard Core CMS
+
 Now Press F5 and you should be now at the setup screen for the Orchard Core CMS.

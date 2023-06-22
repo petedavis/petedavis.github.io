@@ -1,5 +1,3 @@
-# petedavis.github.io
+# petedavis.io site
 
-Personal Blog
-
-Based of the [Jekyll Atlantic](https://github.com/zerostaticthemes/jekyll-atlantic-theme) theme.
+built with Hugo
