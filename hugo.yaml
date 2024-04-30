@@ -136,18 +136,6 @@ markup:
     #     minMatchCharLength: 0
     #     keys: ["title", "permalink", "summary", "content"]
 
-markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        noClasses: false
-        # anchorLineNos: true
-        # codeFences: true
-        # guessSyntax: true
-        # lineNos: true
-        # style: monokai
-
 privacy:
     vimeo:
         disabled: false

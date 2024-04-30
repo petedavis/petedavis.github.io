@@ -2,7 +2,7 @@
 title: "Orchard Core: Up and Running!"
 date: 2017-04-21T12:16:03+09:30
 layout: post
-authors: ["Peter Davis"]
+author: ["Peter Davis"]
 categories: ["Orchard Core", "Development"]
 # description: "Making sure your website runs fast and loads quickly is a fundamental part of the web design and seo process."
 thumbnail: "https://source.unsplash.com/dCgbRAQmTQA/640x360"

@@ -1,5 +1,5 @@
-# Update the NODE_VERSION arg in docker-compose.yml to pick a Node version: 18, 16, 14
-ARG NODE_VERSION=19
+# Update the NODE_VERSION arg in docker-compose.yml to pick a Node version: 20, 18
+ARG NODE_VERSION=20
 ARG DEBIAN_RELEASE=bookworm
 FROM mcr.microsoft.com/devcontainers/javascript-node:${NODE_VERSION}-${DEBIAN_RELEASE}
 
